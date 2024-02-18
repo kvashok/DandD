@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="https://kit.fontawesome.com/6c3a6bd8e5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="team-members">
+            <article class="team-member">
+                <img src="Img/ashok.png" alt="ashok" class="team-member-avatar">
+                <div class="team-member-name">
+                    <h3>Ashok Venkatesan</h3>
+                    <p>Front End Developer</p>
+                </div>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </article>
+            <article class="team-member">
+                <img src="Img/lokesh.png" alt="lokesh" class="team-member-avatar">
+                <div class="team-member-name">
+                    <h3>Lokesh P</h3>
+                    <p>Full stack Developer</p>
+                </div>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </article>
+            <article class="team-member">
+                <img src="Img/harish.png" alt="harish" class="team-member-avatar">
+                <div class="team-member-name">
+                    <h3>Harish Mahadevan</h3>
+                    <p>Pipeline Developer</p>
+                </div>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </article>
+            <article class="team-member">
+                <img src="Img/naren.png" alt="naren" class="team-member-avatar">
+                <div class="team-member-name">
+                    <h3>Narendran</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </article>
+            <article class="team-member">
+                <img src="Img/kiruba.png" alt="kiruba" class="team-member-avatar">
+                <div class="team-member-name">
+                    <h3>Kirubaharan M</h3>
+                    <p>Full stack Developer</p>
+                </div>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </article>
+        </div>
+        <script src="JS/Sortable.min.js"></script>
+        <script>
+            const dragAndDropItems=document.getElementById('team-members');
+            new Sortable(dragAndDropItems,{
+                animation: 350,
+                chosenClass: 'team-member-chosen',
+                dragClass: 'team-member-drag'
+            });
+        </script>
+    </body>
+</html>
